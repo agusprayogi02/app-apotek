@@ -5,12 +5,12 @@ import '../../../controllers/splash_screen_controller.dart';
 class SplashScreenPage extends GetView<SplashScreenController> {
   @override
   Widget build(BuildContext context) {
+    controller.onInit();
     return Scaffold(
-      appBar: AppBar(
-        title: Text('SplashScreenPage'),
-      ),
       body: SafeArea(
-        child: Text('SplashScreenController'),
+        child: Center(
+          child: CircularProgressIndicator(),
+        ),
       ),
     );
   }

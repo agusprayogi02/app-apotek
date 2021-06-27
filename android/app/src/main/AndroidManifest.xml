@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.agusprayogi02.apotek_app">
-   <application
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+  <application
         android:label="apotek_app"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -37,5 +41,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <!-- Maps Api -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+          android:value="AIzaSyAPJ-3Hrp97g-89n80FRlcghvEe51x0iBc"/>
     </application>
 </manifest>
